@@ -14,6 +14,7 @@
 
     <title>Frontend Mentor | Intro component with sign up form</title>
 
+    <link rel="stylesheet" href="style.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -26,7 +27,7 @@
     </style>
   </head>
   <body>
-    <div class="container"> 
+    <div class="container">
       <div class="left-container">
         <h1>Learn to code by watching others</h1>
 
@@ -38,46 +39,51 @@
       </div>
       <div class="right-container">
         <div class="heading">
-          <p>Try it free 7 days then $20/mo. thereafter</p>
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
         </div>
 
         <div class="form">
-          <form action="#">
+          <form action="#" id="form">
             <div class="form-group">
               <input
                 type="text"
                 name="first-name"
-                id="name"
+                id="first-name"
                 placeholder="First Name"
                 aria-label="true"
               />
+              <small>Error Message</small>
             </div>
             <div class="form-group">
               <input
                 type="text"
                 name="last-name"
-                id="name"
+                id="last-name"
                 placeholder="Last Name"
                 aria-label="true"
               />
+              <small>Error Message</small>
             </div>
+
             <div class="form-group">
               <input
-                type="email"
+                type="text"
                 name="email"
                 id="email"
                 placeholder="Email Address"
                 aria-label="true"
               />
+              <small>Error Message</small>
             </div>
             <div class="form-group">
               <input
                 type="password"
                 name="password"
-                id="name"
+                id="password"
                 placeholder="Password"
                 aria-label="true"
               />
+              <small>Error Message</small>
             </div>
 
             <div class="form-group">
@@ -86,7 +92,8 @@
           </form>
 
           <p>
-            By clicking the button, you are agreeing to our Terms and Services
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
           </p>
         </div>
       </div>
@@ -100,5 +107,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
