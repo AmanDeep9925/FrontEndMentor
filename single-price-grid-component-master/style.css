@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.grid-container {
+  /* border: 2px solid black; */
+  width: 50%;
+  height: 100%;
+  margin: 100px auto 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px 4px hsla(218, 22%, 67%, 0.5);
+}
+
+@media (max-width: 1200px) {
+  .grid-container {
+    margin: 100px auto;
+    width: 70%;
+  }
+}
+
+.top-container {
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+
+  height: auto;
+  width: 100%;
+}
+
+.top-container h1 {
+  font-size: 1.8rem;
+  margin: 10px 0 20px 0;
+  color: hsl(179, 62%, 43%);
+}
+
+.top-container p {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: hsl(218, 22%, 67%);
+  line-height: 2;
+}
+
+.top-container p:nth-of-type(1) {
+  color: hsl(71, 73%, 54%);
+  font-weight: 500;
+}
+
+.bottom-container {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: auto;
+}
+
+.left-container,
+.right-container {
+  height: auto;
+  width: 50%;
+  padding: 20px 30px;
+  color: white;
+  align-self: stretch;
+}
+
+.left-container {
+  background-color: hsl(179, 61%, 37%);
+  border-bottom-left-radius: 5px;
+}
+
+.left-container p:first-of-type {
+  color: hsl(218, 22%, 67%);
+}
+.left-container p > span {
+  font-size: 2rem;
+  color: white;
+}
+
+.left-container button {
+  height: auto;
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 0 5px 2px -1px hsla(71, 73%, 54%, 0.6);
+}
+
+.left-container button:focus {
+  outline: none;
+}
+
+.right-container {
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-right-radius: 5px;
+}
+
+.right-container > h1 {
+  margin: 1.2rem 0 0 0;
+}
+.right-container .features {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.features li {
+  margin: 10px 0 0 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+    margin: 100px auto;
+    width: 85%;
+  }
+
+  .bottom-container {
+    flex-direction: column;
+  }
+
+  .right-container,
+  .left-container {
+    width: 100%;
+    padding: 20px 40px;
+    border-radius: 0px;
+  }
+
+  .right-container {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .right-container li {
+    font-size: 0.9rem;
+    padding: 5px 0;
+  }
+
+  p {
+    line-height: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-container {
+    margin: 100px auto;
+    width: 90%;
+  }
+}
